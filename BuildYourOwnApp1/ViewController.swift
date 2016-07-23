@@ -44,8 +44,58 @@ class ViewController: UIViewController {
         randomNum = Int(arc4random_uniform(8))
         wordArrayForThisRound = wordArrays[randomNum]
         wordForThisRound = words[randomNum]
+        for i in 0..<letterLabels.count{
+            letterLabels[i].text = ""
+        }
     }
 
+    @IBAction func onTappedGuessLetter(sender: AnyObject) {
+        if misses <= 4{
+            var didMiss : Bool = true
+            for i in 0..<wordArrayForThisRound.count{
+                if guessField.text == wordArrayForThisRound[i]{
+                    letterLabels[i].text = wordArrayForThisRound[i]
+                    didMiss = false
+                }
+            }
+            if didMiss == true{
+                misses += 1
+            }
+            guessField.endEditing(true)
+            guessField.text = ""
+            if misses == 4{
+                guessField.text = "MUST GUESS FULL WORD"
+            }
+        }
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        guessField.endEditing(true)
+        let dvc = segue.destinationViewController as! SecondViewController
+        dvc.wordToPrint = wordForThisRound
+        let wordEntered : String = guessField.text!
+        var guessedCorrectly : Bool = false
+        if wordEntered == wordForThisRound{
+            guessedCorrectly = true
+        }
+        dvc.correct = guessedCorrectly
+    }
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
