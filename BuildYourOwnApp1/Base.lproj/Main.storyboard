@@ -39,20 +39,24 @@
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aOU-fj-l33">
                                         <rect key="frame" x="0.0" y="11" width="112" height="30"/>
-                                        <state key="normal" title="Guess Full Word"/>
+                                        <state key="normal" title="Guess Full Word">
+                                            <color key="titleColor" red="1" green="0.9698557177983318" blue="0.0004047529727226884" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
                                         <connections>
                                             <segue destination="06W-MA-h0O" kind="show" id="etB-x5-M0j"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DBR-Ee-37y">
                                         <rect key="frame" x="152" y="11" width="88" height="30"/>
-                                        <state key="normal" title="Guess Letter"/>
+                                        <state key="normal" title="Guess Letter">
+                                            <color key="titleColor" red="1" green="0.9698557177983318" blue="0.0004047529727226884" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
                                         <connections>
                                             <action selector="onTappedGuessLetter:" destination="BYZ-38-t0r" eventType="touchUpInside" id="umY-L6-kBY"/>
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.051932120460000002" green="0.73298660490000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="240" id="kRw-Ld-J5l"/>
                                 </constraints>
@@ -110,7 +114,7 @@
                                         </constraints>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.051932120460000002" green="0.73298660490000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="288" id="KNC-pY-vTe"/>
                                     <constraint firstItem="OtH-t7-7uM" firstAttribute="centerX" secondItem="1ik-O7-2Fz" secondAttribute="centerX" id="PYt-ta-zQP"/>
@@ -187,14 +191,14 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.051932120460000002" green="0.73298660490000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="75" id="Bag-xE-v7o"/>
                                     <constraint firstAttribute="width" constant="380" id="wAR-id-wof"/>
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.051932120455226882" green="0.73298660490057554" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="1ik-O7-2Fz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6GQ-2Y-IeZ"/>
                             <constraint firstItem="uyD-jJ-i0x" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gtC-SW-Qs2"/>
@@ -250,7 +254,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.051932120460000002" green="0.73298660490000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="oTM-8M-25q" firstAttribute="centerX" secondItem="f8T-vk-F1H" secondAttribute="centerX" id="cfy-bQ-yxP"/>
                         </constraints>

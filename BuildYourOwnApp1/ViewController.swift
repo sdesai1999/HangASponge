@@ -45,7 +45,7 @@ class ViewController: UIViewController {
         wordArrayForThisRound = wordArrays[randomNum]
         wordForThisRound = words[randomNum]
         for i in 0..<letterLabels.count{
-            letterLabels[i].text = ""
+            letterLabels[i].text = "_"
         }
     }
     
