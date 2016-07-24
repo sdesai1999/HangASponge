@@ -72,19 +72,19 @@
                                         <rect key="frame" x="48" y="19" width="94" height="5"/>
                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                     </view>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="spongebobBody" translatesAutoresizingMaskIntoConstraints="NO" id="xGX-yS-NlL">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xGX-yS-NlL">
                                         <rect key="frame" x="92" y="43" width="105" height="163"/>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="spongebobLeftArm" translatesAutoresizingMaskIntoConstraints="NO" id="KDM-G7-heo">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KDM-G7-heo">
                                         <rect key="frame" x="197" y="128" width="23" height="100"/>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="spongebobLeftLeg" translatesAutoresizingMaskIntoConstraints="NO" id="5KD-KN-Fpo">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5KD-KN-Fpo">
                                         <rect key="frame" x="155" y="204" width="42" height="65"/>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="spongebobRightArm" translatesAutoresizingMaskIntoConstraints="NO" id="y4Y-id-hXG">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="y4Y-id-hXG">
                                         <rect key="frame" x="69" y="128" width="23" height="100"/>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="spongebobRightLeg" translatesAutoresizingMaskIntoConstraints="NO" id="RWV-wW-4w3">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RWV-wW-4w3">
                                         <rect key="frame" x="92" y="204" width="42" height="65"/>
                                     </imageView>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OkG-9h-gX6">
@@ -282,11 +282,4 @@
             <point key="canvasLocation" x="440" y="350"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="spongebobBody" width="684" height="978"/>
-        <image name="spongebobLeftArm" width="134" height="510"/>
-        <image name="spongebobLeftLeg" width="208" height="384"/>
-        <image name="spongebobRightArm" width="142" height="512"/>
-        <image name="spongebobRightLeg" width="208" height="384"/>
-    </resources>
 </document>

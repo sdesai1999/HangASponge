@@ -48,6 +48,22 @@ class ViewController: UIViewController {
             letterLabels[i].text = ""
         }
     }
+    
+    func resetEverything(){
+        for i in 0..<11{
+            letterLabels[i].text = ""
+        }
+        guessField.text = ""
+        misses = 0
+        randomNum = Int(arc4random_uniform(8))
+        wordArrayForThisRound = wordArrays[randomNum]
+        wordForThisRound = words[randomNum]
+        bobBody.image = nil
+        bobLeftArm.image = nil
+        bobRightArm.image = nil
+        bobLeftLeg.image = nil
+        bobRightLeg.image = nil
+    }
 
     @IBAction func onTappedGuessLetter(sender: AnyObject) {
         if misses <= 4{
@@ -60,12 +76,20 @@ class ViewController: UIViewController {
             }
             if didMiss == true{
                 misses += 1
+                switch misses{
+                case 1:
+                    bobBody.image = UIImage(named: "spongebobBody")
+                case 2:
+                    bobLeftArm.image = UIImage(named: "spongebobLeftArm")
+                case 3:
+                    bobRightArm.image = UIImage(named: "spongebobRightArm")
+                default:
+                    bobLeftLeg.image = UIImage(named: "spongebobLeftLeg")
+                    bobRightLeg.image = UIImage(named: "spongebobRightLeg")
+                }
             }
             guessField.endEditing(true)
             guessField.text = ""
-            if misses == 4{
-                guessField.text = "MUST GUESS FULL WORD"
-            }
         }
     }
     
@@ -79,6 +103,7 @@ class ViewController: UIViewController {
             guessedCorrectly = true
         }
         dvc.correct = guessedCorrectly
+        resetEverything()
     }
 
 }
