@@ -51,7 +51,7 @@ class ViewController: UIViewController {
     
     func resetEverything(){
         for i in 0..<11{
-            letterLabels[i].text = ""
+            letterLabels[i].text = "_"
         }
         guessField.text = ""
         misses = 0
